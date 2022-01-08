@@ -1,0 +1,28 @@
+div{
+    margin: 0 0 4rem 0;
+}
+
+.buttonStyle{
+    background: rgba(194,197,204,0.5);
+    cursor: pointer;
+
+    padding: 0.7rem 1.3rem;
+
+    border-radius: 7px;
+    border: none;
+
+    text-decoration: none;
+
+    transition: background 0.3s ease;
+    color: #000;
+
+    font-weight: bold;
+}
+
+.buttonStyle:last-child{
+    margin: 0 0 0 2rem;
+}
+
+.buttonStyle:active{
+    background: rgba(194,197,204,1);
+}

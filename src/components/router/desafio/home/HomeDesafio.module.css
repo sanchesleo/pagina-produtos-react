@@ -1,0 +1,50 @@
+.animeleft{
+    opacity: 0;
+    transform: translateX(-20px);
+
+    animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+    to {
+        opacity: 1;
+        transform: initial;
+    }
+}
+
+button{
+    border: none;
+    background: none;
+
+    cursor: pointer;
+}
+
+.produtosContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.produtoContent img{
+   width: 200px; 
+   border-radius: 5px;
+   transition: filter .2s ease-in-out;
+}
+
+.produtoContent img:hover{
+    filter: opacity(.8);    
+ }
+
+.produtoContent p{
+    font-size: 1.2rem;
+    font-weight: bold;
+ }
+
+@media only screen and (max-width: 1500px) { 
+    .produtosContainer{
+        grid-template-columns: auto;
+
+        align-items: center;
+        justify-items: center;
+    }
+}
